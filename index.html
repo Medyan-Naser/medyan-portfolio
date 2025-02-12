@@ -35,153 +35,20 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li class="active"><a href="index.html">Home</a></li>
+							<!-- <li class="active"><a href="index.html">Home</a></li>
+                            <li class="active"><a href="about.html">Contact Me</a></li> -->
+                            <!-- <li><a href="index.html" onclick="changeTab('home')">Home</a></li>
+                            <li><a href="#" onclick="changeTab('contact')">Contact Me</a></li>
+                            <li><a href="#" onclick="changeTab('certificate')">Certificate</a></li> -->
+                            <li class="active"><a href="#" data-page="main.html">Home</a></li>
+                            <li><a href="#" data-page="certificates.html">Certifications</a></li>
+                            <li><a href="#" data-page="projects.html">Projects</a></li>
 						</ul>
 						<ul class="icons">
 							<li><a href="https://www.linkedin.com/in/medyan-naser-810a78222/" class="icon brands fa-linkedin"><span class="label">Instagram</span></a></li>
 							<li><a href="https://github.com/Medyan-Naser" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 						</ul>
 					</nav>
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Featured Post -->
-						<article class="post featured">
-							<header class="major">
-
-								<h2>Nice to meet you!</h2>
-								<h3>My name is Medyan Naser.</h3>
-								<p>
-                                    TODO
-									<br />
-								</p>
-
-							</header>
-							<a class="image main"><img src="images/cn_tower.jpeg" alt="" /></a>
-							<ul class="actions special">
-								<li><a href="https://www.linkedin.com/in/medyan-naser-810a78222/" class="button large">About Me</a></li>
-							</ul>
-						</article>
-
-						<!-- Gallery -->
-							<div class="container">
-
-								<h3>Check out my latest projects!</h3>
-
-								<!-- Slider main container -->
-								<div class="swiper">
-									<!-- Additional required wrapper -->
-									<div class="swiper-wrapper">
-										<!-- Slides -->
-                                         <!-- TODO -->
-										<div class="swiper-slide"><img src="" /></div>
-										<div class="swiper-slide"><img src="" /></div>
-										<div class="swiper-slide"><img src="" /></div>
-										<div class="swiper-slide"><img src="" /></div>
-									</div>
-									<!-- If we need pagination -->
-									<div class="swiper-pagination"></div>
-
-									<!-- If we need navigation buttons -->
-									<div class="swiper-button-prev"></div>
-									<div class="swiper-button-next"></div>
-
-								</div>
-							</div>
-
-						<!-- Other Posts -->
-						<section class="posts">
-							<article>
-								<header>
-									<span class="date">August 2023</span>
-									<h2>
-										<a href="https://github.com/Medyan-Naser">
-											TODO
-										</a>
-									</h2>
-								</header>
-								<a class="image fit"><img src="images/project/compost.jpg" alt="" /></a>
-								<p>
-									TODO
-									<a style="font-weight:bold" href="">Notion</a> 
-									for more project details!
-								</p>
-								<ul class="actions special">
-									<li><a href="" class="button">View Project</a></li>
-								</ul>
-							</article>
-							<article>
-								<header>
-									<span class="date">September 2023</span>
-									<h2>
-										<a href="">
-											TODO
-										</a>
-									</h2>
-								</header>
-								<a class="image fit"><img src="" alt="" /></a>
-								<p>
-									TODO
-								</p>
-								<ul class="actions special">
-									<li><a href="" class="button">View Project</a></li>
-								</ul>
-							</article>
-							<article>
-								<header>
-									<span class="date">August 2023</span>
-									<h2>
-										<a href="">
-											TODO
-										</a>
-									</h2>
-								</header>
-								<a class="image fit"><img src="" alt="" /></a>
-								<p>
-									TODO
-								</p>
-								<ul class="actions special">
-									<li><a href="" class="button">View Project</a></li>
-								</ul>
-							</article>
-							<article>
-								<header>
-									<span class="date">January 2020</span>
-									<h2>
-										<a href="w">
-											TODO
-										</a>
-									</h2>
-								</header>
-								<a class="image fit"><img src="" alt="" /></a>
-								<p>
-									TODO
-								</p>
-								<ul class="actions special">
-									<li><a href="" class="button">View Project</a></li>
-								</ul>
-							</article>
-						</section>
-
-						<!-- Footer -->
-						<!-- <footer> -->
-							<!-- <div class="pagination"> -->
-								<!--<a href="#" class="previous">Prev</a>-->
-								<!-- <a href="#" class="page active">1</a>
-								<a href="#" class="page">2</a>
-								<a href="#" class="page">3</a>
-								<span class="extra">&hellip;</span>
-								<a href="#" class="page">8</a>
-								<a href="#" class="page">9</a>
-								<a href="#" class="page">10</a>
-								<a href="#" class="next">Next</a> -->
-							<!-- </div> -->
-					<!-- 	</footer> -->
-
-					</div>
-
-
 
 				<!-- Footer -->
 					<div id="main">
@@ -225,6 +92,7 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+            <script src="assets/js/tab_script.js"></script>
 
 			<script>
 				const swiper = new Swiper('.swiper', {

@@ -8,7 +8,7 @@
 	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
 	<link rel="stylesheet" href="assets/css/style.css" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" /> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
 </head>
@@ -29,7 +29,8 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo">Welcome</a>
+                        <!-- href="index.html" -->
+						<a  class="logo">Welcome</a> 
 					</header>
 
 				<!-- Nav -->
@@ -86,31 +87,11 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+			<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
+
             <script src="assets/js/tab_script.js"></script>
             <script src="assets/js/links.js"></script>
-
-			<script>
-				const swiper = new Swiper('.swiper', {
-						autoplay: {
-							delay: 3000,
-							disableOnInteraction: false,
-						},
-					loop: true,
-
-					// If we need pagination
-					pagination: {
-						el: '.swiper-pagination',
-						clickable: true,
-					},
-
-					// Navigation arrows
-					navigation: {
-						nextEl: '.swiper-button-next',
-						prevEl: '.swiper-button-prev',
-					},
-				});
-			</script>
+            <script src="assets/js/swiper.js"></script>
 
 	</body>
 </html>

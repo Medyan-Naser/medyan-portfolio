@@ -71,3 +71,73 @@
     margin: 0 auto;
 }
 
+
+/* experinece */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Section Titles */
+.experience h2 {
+    text-align: center;
+    padding: 20px;
+    background-color: #135099;
+    color: white;
+    margin: 0;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Sections */
+.experience {
+    /* max-width: 800px; */
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+} 
+
+/* Job and Project Styling */
+.job {
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 5px;
+}
+
+/* Headings inside jobs and projects */
+.job h3 {
+    color: #135099;
+    margin: 0;
+}
+
+/* Date Formatting */
+.job .date {
+    /* display: block; */
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* List Styling */
+.job ul {
+    padding-left: 20px;
+}
+
+.job ul li{
+    margin-bottom: 8px;
+}
+
+.job-list {
+    margin: 0
+}
+
+.job h3 span.company {
+    color: #000000; /* Company color (gold/yellow) */
+    font-weight: normal;
+}
+

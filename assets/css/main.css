@@ -2630,6 +2630,8 @@ input, select, textarea {
 
 			.image.fit img {
 				width: 100%;
+				height: 250px;  /* Ensure the image is always 200px tall */
+				object-fit: contain;
 			}
 
 		.image.main {
@@ -3722,7 +3724,7 @@ input, select, textarea {
 					}
 
 				#nav ul.links li.active {
-					/* background-color: #ffffff; */
+					background-color: #ffffff;
 				}
 
 					#nav ul.links li.active a {

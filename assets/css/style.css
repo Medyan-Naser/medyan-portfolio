@@ -177,6 +177,8 @@ body {
   .main-heading {
     margin: 0;
     padding-bottom: 10px;
+    font-size: 50px !important;
+    text-transform: none;
   }
   
   .sub-heading {
@@ -184,3 +186,12 @@ body {
     padding-bottom: 10px;
   }
   
+
+
+  /* Projects */
+
+  .project-skills{
+    color: gray;
+    font-size: 13px;
+    margin: 10px !important;
+  }

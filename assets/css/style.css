@@ -66,6 +66,72 @@
     text-transform: none;
 }
 
+.ibm-certificate {
+  position: relative;
+  overflow: visible;      /* allow popup to overflow outside the card */
+  z-index: 5;             /* keep card above other content if needed */
+}
+
+.sub-certs-popup {
+    display: none;
+    position: absolute;
+    /* top: 50%; */
+    top: calc(100% + 50px);
+    left: 50%;
+    transform: translateY(-50%);
+    /* width: 400px;  */
+    width: 70vw;
+    /* max-height: 300px; */
+    overflow-y: auto;
+    /* background: rgb(220, 51, 51); */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    z-index: 20;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    background: #c1d3dc;
+}
+
+.sub-certs-popup .sub-cert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5px; /* space between image and h4 */
+}
+
+.sub-certs-popup .sub-cert h4 {
+    font-size: 0.7rem;          /* adjust size */
+    color: #333;                /* dark text */
+    margin: 0;                  /* reset default margin */
+    padding: 0;
+    line-height: 1.2;
+    word-break: break-word;      /* wrap long titles */
+}
+
+.sub-certs-popup .sub-cert img {
+    width: 100%;
+    /* height: 200px; */
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+/* .sub-certs-popup .sub-cert img:hover {
+    transform: scale(1.05);
+} */
+
+/* Show popup on hover */
+.ibm-certificate:hover .sub-certs-popup {
+    display: grid;
+}
+
+.sub-cert:hover{
+    transform: scale(1.15);
+}
+
 /* Center the paragraph inside each article */
 .posts article p {
     text-align: center;

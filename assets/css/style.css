@@ -75,10 +75,13 @@
 /* temporarily bring this card + popup above others */
 .certificate-with-popup:hover {
     z-index: 50;
-    background-color: #e0f7fa; /* change main certificate background */
+
     transition: background-color 0.2s ease; /* smooth effect */
 }
 
+.certificate:hover {
+    background-color: #e0f7fa; /* change main certificate background */
+}
 
 .sub-certs-popup {
     display: none;
@@ -99,6 +102,17 @@
     overflow-y: auto;     /* allow internal scroll if content tall */
 
 }
+.certificate,
+.sub-cert {
+    cursor: pointer; /* show hand cursor */
+}
+
+.certificate a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
 
 .sub-certs-popup .sub-cert {
     display: flex;

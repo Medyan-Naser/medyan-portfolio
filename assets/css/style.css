@@ -94,7 +94,7 @@
     display: none;
     position: absolute;
     width: 70vw;
-    padding: 15px;
+    padding: 15px 15px 20px 15px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     z-index: 20;
@@ -103,7 +103,6 @@
     background: #d0ebf7;
     overflow: visible;
     top: 100%;
-    margin-top: 12px;
     box-sizing: border-box;
     max-height: 80vh;     /* avoid going off screen vertically */
     overflow-y: auto;     /* allow internal scroll if content tall */

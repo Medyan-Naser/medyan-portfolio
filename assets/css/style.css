@@ -67,6 +67,13 @@
     text-transform: none;
 }
 
+.certificate a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    border: none;
+}
+
 .certificate-with-popup {
   position: relative;
   overflow: visible;      /* allow popup to overflow outside the card */
@@ -106,14 +113,6 @@
 .sub-cert {
     cursor: pointer; /* show hand cursor */
 }
-
-.certificate a {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-    border: none;
-}
-
 
 .sub-certs-popup .sub-cert {
     display: flex;

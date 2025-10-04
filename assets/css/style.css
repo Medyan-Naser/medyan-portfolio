@@ -51,6 +51,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     background: white;
     padding: 10px;
+    /* position: relative; */
 }
 
 .certificate img {
@@ -75,7 +76,6 @@
 /* temporarily bring this card + popup above others */
 .certificate-with-popup:hover {
     z-index: 50;
-
     transition: background-color 0.2s ease; /* smooth effect */
 }
 
@@ -111,6 +111,7 @@
     text-decoration: none;
     color: inherit;
     display: block;
+    border: none;
 }
 
 

@@ -8,29 +8,36 @@ document.addEventListener("DOMContentLoaded", function () {
             .then(response => response.text())
             .then(html => {
                 mainDiv.innerHTML = html;
+                
+                // IMPORTANT: If the loaded page is 'certificates.html', initialize listeners
+                if (page === "certificates.html") {
+                    // This function is globally available from popup_position.js
+                    if (typeof initializePopupListeners === 'function') {
+                        initializePopupListeners();
+                    }
+                }
             })
             .catch(error => console.error("Error loading page:", error));
     }
 
     function closeNavPanel() {
-        body.classList.remove("is-navPanel-visible"); // Remove the class to close the menu
+        body.classList.remove("is-navPanel-visible");
     }
 
     // Load default home page on first load
-    loadPage("main.html");
+    loadPage("certificates.html"); 
+    
     // Add event listeners for navigation
     links.forEach(link => {
         link.addEventListener("click", function (event) {
             event.preventDefault();
-            // Remove active class from all list items
-            document.querySelectorAll(".links li").forEach(li => li.classList.remove("active"));
             
-            // Add active class to the clicked item's parent <li>
+            document.querySelectorAll(".links li").forEach(li => li.classList.remove("active"));
             this.parentElement.classList.add("active");
-            // Load the requested page
+            
             const page = this.getAttribute("data-page");
-            loadPage(page);
-            // Close the navigation panel
+            loadPage(page); // This calls the function above, which handles initialization
+            
             closeNavPanel();
         });
     });

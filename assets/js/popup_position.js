@@ -5,7 +5,7 @@
  */
 function adjustPopupPosition(certContainer, popupElement) {
     // Console log for debugging (KEEP THIS until it works)
-    console.log('adjustPopupPosition called for:', certContainer.querySelector('h3').textContent); 
+    // console.log('adjustPopupPosition called for:', certContainer.querySelector('h3').textContent); 
     
     if (!popupElement) return;
 
@@ -51,7 +51,7 @@ function adjustPopupPosition(certContainer, popupElement) {
     // 4. APPLY STYLES
     popupElement.style.left = finalLeft;
     popupElement.style.transform = finalTransform;
-    console.log(`Final Left: ${finalLeft}, Final Transform: ${finalTransform}`);
+    // console.log(`Final Left: ${finalLeft}, Final Transform: ${finalTransform}`);
 }
 
 /**
@@ -60,7 +60,7 @@ function adjustPopupPosition(certContainer, popupElement) {
  */
 function initializePopupListeners() {
     const certsWithPopup = document.querySelectorAll('.certificate-with-popup');
-    console.log(`Found ${certsWithPopup.length} certificate containers with popups.`);
+    // console.log(`Found ${certsWithPopup.length} certificate containers with popups.`);
 
     certsWithPopup.forEach(certContainer => {
         const popup = certContainer.querySelector('.sub-certs-popup');

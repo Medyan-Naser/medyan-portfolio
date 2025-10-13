@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Load default home page on first load
-    loadPage("certificates.html"); 
+    loadPage("main.html"); 
     
     // Add event listeners for navigation
     links.forEach(link => {

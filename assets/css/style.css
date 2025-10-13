@@ -93,7 +93,6 @@
 .sub-certs-popup {
     display: none;
     position: absolute;
-    width: 70vw;
     padding: 15px 15px 20px 15px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
@@ -106,6 +105,9 @@
     box-sizing: border-box;
     max-height: 80vh;     /* avoid going off screen vertically */
     overflow-y: auto;     /* allow internal scroll if content tall */
+    max-width: 90vw;
+    left: 50%;         /* Start positioning from the center */
+    transform: translateX(-50%);
 }
 
 .align-right {

@@ -136,7 +136,7 @@
     margin: 0;
     padding: 0;
     line-height: 1.2;
-    word-break: break-word;      /* wrap long titles */
+    /* word-break: break-word; */
     text-transform: none
 }
 

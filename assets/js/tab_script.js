@@ -32,10 +32,22 @@ document.addEventListener("DOMContentLoaded", function () {
         link.addEventListener("click", function (event) {
             event.preventDefault();
             
+            const intro = document.getElementById("intro");
+            const isIntroVisible = intro && !intro.classList.contains("hidden");
+            
             document.querySelectorAll(".links li").forEach(li => li.classList.remove("active"));
             this.parentElement.classList.add("active");
             
             const page = this.getAttribute("data-page");
+            
+            // If intro is visible (scroll button is active), simulate clicking the scroll button
+            if (isIntroVisible) {
+                const scrollButton = document.querySelector('#intro .scrolly');
+                if (scrollButton) {
+                    scrollButton.click();
+                }
+            }
+            
             loadPage(page); // This calls the function above, which handles initialization
             
             closeNavPanel();
